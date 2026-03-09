@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd " >
+        
+        <!-- Setter Dependency Injection -->
+        <bean id="helloworld" class="model.HelloWorld">
+            <property name="message" value="Hello World from Dependency Injection"></property>
+        </bean>
+        
+        <bean id ="student" class="model.Student">
+          <property name="rollno" value="30017"></property>
+          <property name="name" value="B Siva Krishna"></property>
+          <property name="department" value="CSE"></property>
+          <property name="cgpa" value="9.48"></property>
+        </bean>
+        
+        <!-- Constructor Dependency Injection -->
+        <bean id = "person" class="model.Person">
+            <constructor-arg name="name" value="John"></constructor-arg>
+            <constructor-arg name="age" value="19"></constructor-arg>
+            <constructor-arg name="emailID" value="john@gmail.com"></constructor-arg>
+        </bean>
+</beans>
