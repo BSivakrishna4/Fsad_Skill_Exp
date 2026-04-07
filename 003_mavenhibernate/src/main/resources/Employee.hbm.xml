@@ -1,0 +1,7 @@
+<hibernate-mapping>
+<class name="model.Employee" table="employee">
+<id name="empid" column="empid"/>
+<property name="name" column="name"/>
+<property name="salary" column="salary"/>
+</class>
+</hibernate-mapping>
