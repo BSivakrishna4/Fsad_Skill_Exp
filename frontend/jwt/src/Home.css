@@ -1,0 +1,65 @@
+.home{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px);
+}
+.home .menus{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #000;
+    color: white;
+}
+.home .workspace{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 49px calc(100% - 80px) 29px;
+}
+.home .workspace .ws-header{
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.home .workspace .ws-content{
+    overflow: auto;
+}
+.home .workspace .ws-footer{
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    font-size: 8pt;
+    justify-content: center;
+}
+.home .workspace .ws-header img{
+    height: 18px;
+    margin-right: 10px;
+}
+.home .workspace .ws-header img:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.home .menus ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.home .menus ul li{
+    width: calc(100% - 10px);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid transparent;
+    padding-left: 5px;
+}
+.home .menus ul li.active,
+.home .menus ul li:hover{
+    cursor: pointer;
+    background: #323232;
+    border-left: 5px solid dodgerblue;
+}

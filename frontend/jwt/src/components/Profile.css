@@ -1,0 +1,47 @@
+.profile{
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background: rgb(240, 246, 252);
+    overflow: auto;
+}
+.profile .panel{
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background: white;
+    border-radius: 10px;
+}
+.profile .panel .meta-info{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.profile .panel .meta-info img{
+    height: 100px;
+    width: 90px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    /* border-radius: 50%; */
+}
+.profile .panel .meta-info div{
+    display: flex;
+    flex-direction: column;
+    font-size: 14pt;
+    font-weight: 600;
+}
+.profile .panel .meta-info div .role{
+    font-size: 10pt;
+    font-weight: normal;
+}
+.profile .panel .user-info{
+    padding-top: 20px;
+}
+.profile .panel .user-info div{
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 10px;
+}
