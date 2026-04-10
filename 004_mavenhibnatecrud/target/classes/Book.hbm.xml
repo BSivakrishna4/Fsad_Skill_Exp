@@ -1,8 +1,0 @@
-
-<hibernate-mapping>
-	<class name="model.Book" table="book">
-		<id name="bookid" column="bookid" />
-		<property name="title" column="title" />
-		<property name="price" column="price" />
-	</class>
-</hibernate-mapping>

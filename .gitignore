@@ -5,3 +5,5 @@ target/
 .project
 .jpa-project
 .factorypath
+node_modules/
+bin/
